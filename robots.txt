@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://robersaa2301.github.io/recargat-landing/sitemap.xml

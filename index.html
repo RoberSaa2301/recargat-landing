@@ -7,9 +7,10 @@
     <meta name="description" content="Recarga saldo telefónico en segundos con letras grandes, sin claves bancarias difíciles y pensado para adultos mayores en Ecuador.">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#1E3A8A">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
 
-    <!-- Reemplaza esta URL por tu enlace real (por ejemplo, GitHub Pages o dominio propio) al publicar -->
-    <link rel="canonical" href="https://recargat.ec/">
+    <!-- URL canónica y Open Graph apuntando a GitHub Pages -->
+    <link rel="canonical" href="https://robersaa2301.github.io/recargat-landing/">
 
     <!-- Open Graph -->
     <meta property="og:locale" content="es_EC">
@@ -17,7 +18,7 @@
     <meta property="og:title" content="RecargaT - Tu saldo al instante, sin enredos">
     <meta property="og:description" content="Un toque y listo para hablar con los tuyos. Recargas simples y accesibles en Ecuador.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://recargat.ec/">
+    <meta property="og:url" content="https://robersaa2301.github.io/recargat-landing/">
     <meta property="og:image" content="https://i.postimg.cc/R0kJYHs1/icono.png">
     <meta property="og:image:alt" content="Logotipo de RecargaT Ecuador">
 
@@ -27,26 +28,15 @@
     <meta name="twitter:description" content="Recarga saldo telefónico en segundos con letras grandes y sin claves difíciles en Ecuador.">
     <meta name="twitter:image" content="https://i.postimg.cc/R0kJYHs1/icono.png">
 
-    <!-- Datos estructurados (Schema.org) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "RecargaT",
-      "operatingSystem": "Android, iOS",
-      "applicationCategory": "FinanceApplication",
-      "inLanguage": "es-EC",
-      "areaServed": {
-        "@type": "Country",
-        "name": "Ecuador"
-      },
-      "description": "Aplicación sencilla con letras grandes para recargar saldo telefónico en Ecuador sin procesos complicados."
-    }
-    </script>
-
-    <!-- Google Fonts: Inter & Manrope -->
+    <!-- Preconnect y DNS Prefetch para orígenes externos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://i.postimg.cc" crossorigin>
+    <link rel="dns-prefetch" href="https://i.postimg.cc">
+
+    <!-- Google Fonts: Inter & Manrope -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://i.postimg.cc/R0kJYHs1/icono.png" />
 
@@ -104,8 +94,56 @@
             animation: gentle-pulse 3s infinite ease-in-out;
         }
     </style>
+
+    <!-- Datos estructurados (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "RecargaT Ecuador",
+          "url": "https://robersaa2301.github.io/recargat-landing/",
+          "inLanguage": "es-EC"
+        },
+        {
+          "@type": "Organization",
+          "name": "RecargaT Ecuador",
+          "url": "https://robersaa2301.github.io/recargat-landing/",
+          "logo": "https://i.postimg.cc/R0kJYHs1/icono.png",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Ecuador"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "RecargaT",
+          "operatingSystem": "Android, iOS",
+          "applicationCategory": "FinanceApplication",
+          "inLanguage": "es-EC",
+          "url": "https://robersaa2301.github.io/recargat-landing/",
+          "description": "Aplicación sencilla con letras grandes para recargar saldo telefónico en Ecuador sin procesos complicados.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "about": [
+            { "@type": "Thing", "name": "Recargas telefónicas en Ecuador" },
+            { "@type": "Thing", "name": "Accesibilidad digital para adultos mayores" }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased selection:bg-orange-500 selection:text-white flex flex-col min-h-screen">
+
+    <!-- ENLACE ACCESIBLE PARA SALTAR AL CONTENIDO -->
+    <a href="#contenido-principal" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 bg-[#1E3A8A] text-white font-bold px-4 py-2 rounded-xl shadow-lg">
+        Saltar al contenido principal
+    </a>
 
     <!-- BARRA NAVEGACIÓN SUPERIOR FIJA -->
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
@@ -161,7 +199,7 @@
         </div>
     </header>
 
-    <main class="flex-grow">
+    <main id="contenido-principal" class="flex-grow">
         <!-- 2. SECCIÓN HERO DE ALTA CONVERSIÓN (2 Columnas) -->
         <section class="relative bg-gradient-to-b from-slate-50 via-blue-50/40 to-slate-50 pt-8 pb-16 lg:pt-16 lg:pb-24 overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -328,7 +366,7 @@
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
                                             </svg>
                                         </div>
-                                        <h3 class="font-heading font-black text-2xl text-emerald-900">¡Recarga Exitosa!</h3>
+                                        <p class="font-heading font-black text-2xl text-emerald-900">¡Recarga Exitosa!</p>
                                         <p class="text-base text-emerald-800 font-semibold" id="sim-success-detail">
                                             Se acreditaron $5 a tu línea Claro en Ecuador.
                                         </p>
@@ -374,7 +412,6 @@
                         <div class="w-14 h-14 bg-[#1E3A8A] text-white rounded-2xl flex items-center justify-center font-heading font-black text-2xl mb-6 shadow-md">
                             1
                         </div>
-                        <!-- Mockup SVG Visual -->
                         <div class="w-full h-48 bg-blue-100/60 rounded-2xl flex flex-col items-center justify-center p-4 mb-6 border border-blue-200">
                             <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-md mb-2 text-[#F97316]">
                                 <svg aria-hidden="true" class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -396,7 +433,6 @@
                         <div class="w-14 h-14 bg-[#F97316] text-white rounded-2xl flex items-center justify-center font-heading font-black text-2xl mb-6 shadow-md">
                             2
                         </div>
-                        <!-- Mockup SVG Visual Operadoras -->
                         <div class="w-full h-48 bg-orange-50 rounded-2xl flex items-center justify-center gap-3 p-4 mb-6 border border-orange-200">
                             <span class="bg-red-600 text-white font-black text-xs px-3 py-2 rounded-xl shadow">CLARO</span>
                             <span class="bg-[#00377D] text-white font-black text-xs px-3 py-2 rounded-xl shadow">TIGO</span>
@@ -415,7 +451,6 @@
                         <div class="w-14 h-14 bg-emerald-600 text-white rounded-2xl flex items-center justify-center font-heading font-black text-2xl mb-6 shadow-md">
                             3
                         </div>
-                        <!-- Mockup Comprobante -->
                         <div class="w-full h-48 bg-emerald-50 rounded-2xl flex flex-col items-center justify-center p-4 mb-6 border border-emerald-200 text-emerald-900">
                             <svg aria-hidden="true" class="w-12 h-12 text-emerald-600 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -450,10 +485,9 @@
                     </p>
                 </div>
 
-                <!-- Tabla Comparativa Visual Accesible -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
                     
-                    <!-- BANCA TRADICIONAL (Enredada) -->
+                    <!-- BANCA TRADICIONAL -->
                     <div class="bg-white rounded-3xl p-8 border-2 border-slate-300 shadow-sm opacity-90 flex flex-col justify-between">
                         <div>
                             <div class="flex items-center gap-3 mb-6">
@@ -486,7 +520,7 @@
                         </div>
                     </div>
 
-                    <!-- RECARGAT (Fácil, Seguro, Accesible WCAG AA) -->
+                    <!-- RECARGAT -->
                     <div class="bg-[#1E3A8A] text-white rounded-3xl p-8 border-4 border-[#F97316] shadow-xl flex flex-col justify-between relative overflow-hidden">
                         <div class="absolute top-0 right-0 bg-[#F97316] text-white text-xs font-black px-4 py-1.5 rounded-bl-xl uppercase tracking-wider">
                             Recomendado
@@ -527,24 +561,24 @@
             </div>
         </section>
 
-        <!-- 5. SECCIÓN DE TESTIMONIO DESTACADO (FONDO AZUL INSTITUCIONAL #1E3A8A) -->
+        <!-- 5. SECCIÓN DE TESTIMONIO DESTACADO -->
         <section id="testimonio" class="py-16 lg:py-24 bg-[#1E3A8A] text-white relative overflow-hidden">
-            <!-- Patrón decorativo tenue -->
             <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#38BDF8_1px,transparent_1px)] [background-size:16px_16px]"></div>
             
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="bg-blue-950/70 border border-blue-800/80 rounded-3xl p-8 sm:p-12 shadow-2xl backdrop-blur-sm text-center md:text-left flex flex-col md:flex-row items-center gap-8 md:gap-12">
                     
-                    <!-- FOTO DE TESTIMONIO -->
+                    <!-- FOTO DE TESTIMONIO CON DIMENSIONES RESERVADAS -->
                     <div class="flex-shrink-0 relative">
                         <div class="w-40 h-40 sm:w-44 sm:h-44 rounded-full border-4 border-[#F97316] overflow-hidden shadow-2xl bg-slate-200 mx-auto">
                             <img 
                                 src="https://i.postimg.cc/NMBPR561/userperson2.jpg" 
                                 alt="Fotografía de María T., usuaria de RecargaT en Quito" 
+                                width="176"
+                                height="176"
                                 class="w-full h-full object-cover object-center"
                             />
                         </div>
-                        <!-- Insignia sobre la foto -->
                         <div class="absolute -bottom-2 inset-x-0 mx-auto w-max bg-emerald-600 text-white font-extrabold text-xs px-3 py-1 rounded-full shadow border border-emerald-400">
                             Quito, Ecuador
                         </div>
@@ -552,10 +586,8 @@
 
                     <!-- CONTENIDO DE TESTIMONIO -->
                     <div class="space-y-4">
-                        <!-- Comillas -->
                         <div class="text-[#F97316] font-black text-5xl leading-none">«</div>
                         
-                        <!-- Cita completa bien ajustada sin cortes -->
                         <blockquote class="text-xl sm:text-2xl font-medium text-slate-100 leading-relaxed italic">
                             "No sirve mi teléfono si no tengo saldo. Con RecargaT pongo minutos yo sola en segundos y llamo a mis hijos sin pedir ayuda a nadie."
                         </blockquote>
@@ -566,7 +598,6 @@
                                 <div class="text-sky-300 font-semibold text-base">77 años · Quito, Ecuador</div>
                             </div>
                             
-                            <!-- Insignia Verde de Verificación -->
                             <div class="inline-flex items-center gap-2 bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 font-bold px-4 py-2 rounded-xl text-sm self-center md:self-auto">
                                 <svg aria-hidden="true" class="w-5 h-5 text-emerald-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
@@ -720,7 +751,6 @@
     </div>
 
     <!-- MODALES LEGALES (PRIVACIDAD, COOKIES, TÉRMINOS) -->
-    <!-- Modal Privacidad -->
     <div id="modal-privacidad" role="dialog" aria-modal="true" aria-labelledby="title-privacidad" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 max-h-[85vh] overflow-y-auto space-y-4 text-slate-800 shadow-2xl relative">
             <button type="button" onclick="closeModal('modal-privacidad')" aria-label="Cerrar política de privacidad" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 font-bold text-xl">✕</button>
@@ -739,7 +769,6 @@
         </div>
     </div>
 
-    <!-- Modal Cookies -->
     <div id="modal-cookies" role="dialog" aria-modal="true" aria-labelledby="title-cookies" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 max-h-[85vh] overflow-y-auto space-y-4 text-slate-800 shadow-2xl relative">
             <button type="button" onclick="closeModal('modal-cookies')" aria-label="Cerrar política de cookies" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 font-bold text-xl">✕</button>
@@ -753,7 +782,6 @@
         </div>
     </div>
 
-    <!-- Modal Términos -->
     <div id="modal-terminos" role="dialog" aria-modal="true" aria-labelledby="title-terminos" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 max-h-[85vh] overflow-y-auto space-y-4 text-slate-800 shadow-2xl relative">
             <button type="button" onclick="closeModal('modal-terminos')" aria-label="Cerrar términos de uso" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 font-bold text-xl">✕</button>
@@ -769,7 +797,6 @@
 
     <!-- JAVASCRIPT VANILLA INTERACTIVO -->
     <script>
-        // MENÚ MÓVIL
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
             const btn = document.getElementById('mobile-menu-btn');
@@ -788,13 +815,11 @@
             if (btn) btn.setAttribute('aria-expanded', 'false');
         }
 
-        // ESTADO DEL SIMULADOR
         let simState = {
             operator: null,
             amount: null
         };
 
-        // SELECCIONAR OPERADORA
         function selectOperator(opName) {
             simState.operator = opName;
             
@@ -810,7 +835,6 @@
             updateSimUI();
         }
 
-        // SELECCIONAR MONTO
         function selectAmount(amt) {
             simState.amount = amt;
 
@@ -826,7 +850,6 @@
             updateSimUI();
         }
 
-        // ACTUALIZAR INTERFAZ DEL SIMULADOR
         function updateSimUI() {
             const summaryText = document.getElementById('sim-summary-text');
             const submitBtn = document.getElementById('sim-submit-btn');
@@ -850,7 +873,6 @@
             }
         }
 
-        // PROCESAR RECARGA SIMULADA
         function processSimulatedRecharge() {
             if (!simState.operator || !simState.amount) return;
 
@@ -867,7 +889,6 @@
             successContainer.classList.add('flex');
         }
 
-        // REINICIAR SIMULADOR
         function resetSimulator() {
             simState.operator = null;
             simState.amount = null;
@@ -888,7 +909,6 @@
             updateSimUI();
         }
 
-        // MODAL DESCARGA
         function openDownloadModal() {
             const modal = document.getElementById('download-modal');
             modal.classList.remove('hidden');
@@ -910,7 +930,6 @@
             closeDownloadModal();
         }
 
-        // MODALES LEGALES
         function openModal(modalId) {
             const modal = document.getElementById(modalId);
             if (modal) modal.classList.remove('hidden');
@@ -921,7 +940,6 @@
             if (modal) modal.classList.add('hidden');
         }
 
-        // AVISO COOKIES
         function closeCookies() {
             const banner = document.getElementById('cookie-banner');
             if (banner) banner.style.display = 'none';

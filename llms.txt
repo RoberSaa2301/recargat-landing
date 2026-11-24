@@ -1,0 +1,8 @@
+# RecargaT Ecuador
+
+> Landing page de RecargaT diseñada con enfoque de accesibilidad UI/UX para facilitar recargas de saldo telefónico en Ecuador, especialmente para adultos mayores.
+
+- Sitio web: https://robersaa2301.github.io/recargat-landing/
+- País objetivo: Ecuador
+- Operadoras mencionadas: Claro, TIGO, CNT
+- Montos de ejemplo en simulador: $3, $5, $10
